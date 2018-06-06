@@ -1577,6 +1577,12 @@ body {
  .c-message_list .c-scrollbar__bar {
      background: #424242;
 }
+
+.c-virtual_list__item,
+.c-virtual_list__sticky_container {
+    background: #222;
+}
+
  .c-virtual_list__item--focus:focus .c-message_list__focus_indicator {
      box-shadow: inset 0 0 0 3px rgba(130, 130, 130, 0.8);
 }
