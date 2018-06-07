@@ -46,7 +46,7 @@ extension SlackPatcher {
             return .failure(reason: .cannotReadJsToPatch)
         }
     
-        let css = try! String(contentsOfFile: Bundle.main.url(forResource: "night_mode", withExtension: "css")!.path)
+        let css = try! String(contentsOfFile: Bundle.main.url(forResource: "black", withExtension: "css")!.path)
         let jsTemplate = try! String(contentsOfFile: Bundle.main.url(forResource: "inject_style", withExtension: "js")!.path)
         let ourJs = jsTemplate.replacingOccurrences(of: "{{{CUSTOM_CSS}}}", with: css)
         let patchedSlackJs = slackJS + "\n" + ourJs
